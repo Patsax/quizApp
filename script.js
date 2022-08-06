@@ -7,6 +7,10 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener('click', startGame);
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++;
+    setNextQuestion();
+});
 
 function startGame() {
     console.log('Started');
@@ -37,6 +41,7 @@ function showQuestion(question) {
 };
 
 function resetState() {
+    clearStatusClass(document.body)
     nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
@@ -50,7 +55,12 @@ function selectAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     });
-    nextButton.classList.remove('hide');
+    if(shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide');
+    } else {
+        startButton.innerText = 'Restart';
+        startButton.classList.remove('hide');
+    }
 };
 
 function setStatusClass(element, correct) {
@@ -75,6 +85,36 @@ const questions = [
             { text: '5', correct: false },
             { text: '2', correct: false },
             { text: '8', correct: false }
+        ]
+    },
+    {
+        question: 'Is Web Dev fun?',
+        answers: [
+            { text: 'Yes!', correct: true },
+            { text: 'IDK', correct: false },
+            { text: 'Sorta', correct: false },
+            { text: 'No!', correct: false }
+            
+        ]
+    },
+    {
+        question: 'Who taught Anakin Skywalker?',
+        answers: [
+            { text: 'Darth Vader', correct: false },
+            { text: 'Yoda', correct: false },
+            { text: 'Obi-wan Kenodi', correct: true },
+            { text: 'Luke Skywalker', correct: false}
+            
+        ]
+    },
+    {
+        question: 'What dice do you roll for an attack in D&D 5e?',
+        answers: [
+            { text: 'd10', correct: false },
+            { text: 'd20', correct: true },
+            { text: 'd12', correct: false },
+            { text: 'd100', correct: false }
+            
         ]
     }
 ];
