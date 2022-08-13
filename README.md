@@ -1,67 +1,34 @@
 
-    # quizApp
-    
-        ![badge:MIT](https://img.shields.io/badge/License-MIT-brightgreen)
-    
-    ---
-    ## Table of Contents
+# quizApp
 
-    1. [Description](#description)
-    2. [Installation](#installation)
-    3. [Usage](#usage)
-    4. [License](#license)
-    5. [Contribute](#contribute)
-    6. [Tests](#tests)
-    7. [Further questions](#questions)
-    ---
+![badge:MIT](https://img.shields.io/badge/License-MIT-brightgreen)
 
-    ---
-    ## Description
-    ```
-    A simple quiz application that will indicate correct and wrong answers. The base quiz only has 4 questions but anyone familiar with coding will be able to download the code and add or remove any qustions they wish.
-    ```
-    ---
+---
+## Table of Contents
 
-    ---
-    ## Installation
-    ```
-    no install required. just go to the url.
-    ```
-    ---
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+---
 
-    ---
-    ## Usage
-    ```
-    na
-    ```
-    ---
-    
-        ---
-        ## License
-        
-        [MIT](https://opensource.org/licenses/MIT)
-    
-        ---
-    
-    ---
-    ## Contribute
-    ```
-    na
-    ```
-    ---
+---
+## Description
+```
+A simple quiz application that will indicate correct and wrong answers. The base quiz only has four questions. Anyone familiar with coding will be able to download the code and add or remove any qustions they wish.
+```
+---
 
-    ---
-    ## Tests
-    ```
-    na
-    ```
-    ---
+---
+## Installation
+```
+no install required. just go to the url.
+```
+---
 
-    ---
-    ## Further Questions?
-    
-    Message me on git hub: Patsax
+---
+## License
 
-    or
+[MIT](https://opensource.org/licenses/MIT)
 
-    Send me an email: patrick.j.sachleben@gmail.com
+---
